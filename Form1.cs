@@ -15,5 +15,16 @@ namespace Demo
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                double x = int.Parse(textBox1.Text);
+                int n = int.Parse(textBox2.Text);
+
+                MessageBox.Show(MyPower.Power(x, n).ToString());
+            }
+        }
     }
 }
